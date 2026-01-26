@@ -18,20 +18,21 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
 /coverage/
+.packages
+.metadata
 
 # Symbolication related
 app.*.symbols
@@ -43,8 +44,56 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/.gradle/
+/android/app/build/
+/android/local.properties
+*.jks
+*.keystore
+key.properties
 
-# Sensitive files
-.mcp.json
+# iOS
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/app.flx
+/ios/Flutter/flutter_assets/
+/ios/ServiceDefinitions.json
+/ios/Runner/GeneratedPluginRegistrant.*
+*.xcuserdata
+
+# Sensitive files - NEVER commit these
 .env
 .env.*
+!.env.example
+.mcp.json
+*.pem
+*.p12
+*.key
+**/secrets/
+**/credentials/
+
+# Local configuration
+local.properties
+google-services.json
+GoogleService-Info.plist
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Test and coverage
+coverage/
+.test_coverage.dart
+test/.test_coverage.dart
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+lib/generated_plugin_registrant.dart
+
+# Web build output
+/web/build/

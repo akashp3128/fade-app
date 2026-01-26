@@ -1,16 +1,71 @@
-# fade_app
+# Fade - Barber Appointment App
 
-A new Flutter project.
+A Flutter mobile app for booking barber appointments. Connects clients with barbers for seamless scheduling.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Client & Barber accounts
+- Browse nearby barbers
+- Book appointments
+- Review system
+- Barber portfolio & availability management
 
-A few resources to get you started if this is your first Flutter project:
+## Setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK (3.x+)
+- Dart SDK
+- Supabase account
+
+### Configuration
+
+1. Copy the environment template:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Fill in your credentials in `.env`:
+   - `SUPABASE_URL` - Your Supabase project URL
+   - `SUPABASE_ANON_KEY` - Your Supabase anon/public key
+   - `GOOGLE_MAPS_API_KEY` - Google Maps API key
+   - `STRIPE_PUBLISHABLE_KEY` - Stripe publishable key (optional)
+
+3. Set up Supabase database - see `SUPABASE_SETUP.md`
+
+### Running the App
+
+```bash
+# Install dependencies
+flutter pub get
+
+# Run with environment variables
+flutter run \
+  --dart-define=SUPABASE_URL=your-url \
+  --dart-define=SUPABASE_ANON_KEY=your-key \
+  --dart-define=GOOGLE_MAPS_API_KEY=your-key
+```
+
+Or create a launch configuration in your IDE.
+
+## Project Structure
+
+```
+lib/
+├── config/       # App configuration & constants
+├── models/       # Data models
+├── providers/    # Riverpod state management
+├── screens/      # UI screens
+│   ├── auth/     # Login, register, onboarding
+│   ├── barber/   # Barber dashboard & tools
+│   └── client/   # Client-facing screens
+└── services/     # API & external services
+```
+
+## Tech Stack
+
+- **Framework**: Flutter
+- **State Management**: Riverpod
+- **Backend**: Supabase (Auth, Database, Storage)
+- **Maps**: Google Maps
+- **Payments**: Stripe (planned)

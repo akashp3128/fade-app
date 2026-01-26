@@ -3,15 +3,27 @@ class AppConstants {
   static const String appName = 'Fade';
   static const String appTagline = 'Find your perfect barber';
 
-  // Supabase
-  static const String supabaseUrl = 'YOUR_SUPABASE_URL';
-  static const String supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
+  // Supabase - Use --dart-define or environment variables
+  static const String supabaseUrl = String.fromEnvironment(
+    'SUPABASE_URL',
+    defaultValue: '',
+  );
+  static const String supabaseAnonKey = String.fromEnvironment(
+    'SUPABASE_ANON_KEY',
+    defaultValue: '',
+  );
 
-  // Stripe - Replace with your actual values
-  static const String stripePublishableKey = 'YOUR_STRIPE_PUBLISHABLE_KEY';
+  // Stripe
+  static const String stripePublishableKey = String.fromEnvironment(
+    'STRIPE_PUBLISHABLE_KEY',
+    defaultValue: '',
+  );
 
-  // Google Maps - Replace with your actual key
-  static const String googleMapsApiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
+  // Google Maps
+  static const String googleMapsApiKey = String.fromEnvironment(
+    'GOOGLE_MAPS_API_KEY',
+    defaultValue: '',
+  );
 
   // Default values
   static const double defaultSearchRadius = 10.0; // km
