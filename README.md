@@ -80,11 +80,26 @@ The barbershop industry lacks a modern, unified booking platform. Most barbers r
 
 ## Screenshots
 
+### Onboarding & Authentication
 <p align="center">
-  <img src="assets/screenshots/fade-app-onboarding.png" width="200" alt="Onboarding 1"/>
-  <img src="assets/screenshots/fade-app-onboarding-2.png" width="200" alt="Onboarding 2"/>
-  <img src="assets/screenshots/fade-app-onboarding-3.png" width="200" alt="Onboarding 3"/>
-  <img src="assets/screenshots/fade-app-login.png" width="200" alt="Login"/>
+  <img src="assets/screenshots/fade-app-onboarding.png" width="180" alt="Onboarding 1"/>
+  <img src="assets/screenshots/fade-app-onboarding-2.png" width="180" alt="Onboarding 2"/>
+  <img src="assets/screenshots/fade-app-onboarding-3.png" width="180" alt="Onboarding 3"/>
+  <img src="assets/screenshots/fade-app-login.png" width="180" alt="Login"/>
+</p>
+
+### Client Experience
+<p align="center">
+  <img src="assets/screenshots/app/01-home.png" width="180" alt="Home Screen"/>
+  <img src="assets/screenshots/app/02-explore.png" width="180" alt="Explore & Search"/>
+  <img src="assets/screenshots/app/03-barber-detail.png" width="180" alt="Barber Profile"/>
+  <img src="assets/screenshots/app/04-barber-list.png" width="180" alt="Barber List"/>
+</p>
+
+### Booking Flow
+<p align="center">
+  <img src="assets/screenshots/app/05-booking-service.png" width="220" alt="Select Service"/>
+  <img src="assets/screenshots/app/06-booking-datetime.png" width="220" alt="Select Date & Time"/>
 </p>
 
 ---
