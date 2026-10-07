@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 100" width="330" height="100" role="img" aria-label="Fade">
+  <title>Fade</title>
+  <path fill="#F5B82E" fill-rule="evenodd" d="M0 0h62v22h-40v18h32v20h-32v4h-22zM0 68h22v11h-22zM0 83h22v8h-22zM0 95h22v5h-22z"/>
+  <path fill="#F6F3EC" fill-rule="evenodd" d="M66 100L96 0L124 0L154 100L130 100L123.4 78L96.6 78L90 100zM110 33.33L118 60L102 60zM166 0H204A50 50 0 0 1 204 100H166zM188 22H204A28 28 0 0 1 204 78H188zM268 0h62v22h-40v17h34v22h-34v17h40v22h-62z"/>
+</svg>
